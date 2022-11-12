@@ -43,7 +43,7 @@ const Header = () => {
               </div>
               <div className="relative left-[60%] flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className=" inline-flex bg-gradient-to-r from-cyan-500 to-blue-500 justify-center rounded-md p-2 text-[#fff] hover:bg-white-[#4A678C] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className=" inline-flex bg-secondary justify-center rounded-md p-2 text-white hover:bg-white-[#4A678C] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -61,8 +61,8 @@ const Header = () => {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "text-[#012340] hover:bg-[#fff] hover:text-[#5096F2] hover:box-border "
-                            : "text-[#012340]",
+                            ? "text-primary hover:bg-white hover:text-secondary hover:box-border "
+                            : "text-primary",
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
@@ -76,8 +76,8 @@ const Header = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden bg-[#5096F2]">
-            <div className="space-y-1 px-2 pt-2 pb-3 bg-[#012340]">
+          <Disclosure.Panel className="sm:hidden bg-secondary">
+            <div className="space-y-1 px-2 pt-2 pb-3 bg-primary">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -85,8 +85,8 @@ const Header = () => {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "text-[#ffff] hover:bg-[#5096F2]"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-[#5096F2]",
+                      ? "text-white hover:bg-secondary"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-secondary",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}

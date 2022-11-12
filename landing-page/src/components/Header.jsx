@@ -43,7 +43,7 @@ const Header = () => {
               </div>
               <div className="relative left-[60%] flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className=" inline-flex bg-[#5096F2] justify-center rounded-md p-2 text-[#fff] hover:bg-white-[#4A678C] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className=" inline-flex bg-gradient-to-r from-cyan-500 to-blue-500 justify-center rounded-md p-2 text-[#fff] hover:bg-white-[#4A678C] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />

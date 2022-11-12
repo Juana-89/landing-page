@@ -37,13 +37,13 @@ const Header = () => {
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="bg-transparent w-1/6 text center">
-                <img className="w-64" src={image} alt="Banner" />
+            <div className="relative flex h-16 m-3 items-center justify-between">
+              <div className="bg-transparent  w-[30%] text center">
+                <img class="w-64" src={image} alt="Banner" />
               </div>
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="relative left-[60%] flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white-[#4A678C] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className=" inline-flex bg-[#5096F2] justify-center rounded-md p-2 text-[#fff] hover:bg-white-[#4A678C] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -61,7 +61,7 @@ const Header = () => {
                         href={item.href}
                         className={classNames(
                           item.current
-                            ? "text-[#012340] hover:bg-[#fff] hover:text-[#5096F2]"
+                            ? "text-[#012340] hover:bg-[#fff] hover:text-[#5096F2] hover:box-border "
                             : "text-[#012340]",
                           "px-3 py-2 rounded-md text-sm font-medium"
                         )}

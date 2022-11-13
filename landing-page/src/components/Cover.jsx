@@ -1,6 +1,6 @@
 const Cover = () => {
   return (
-    <section className="h-[10vh] grid grid-cols-1">
+    <section className="h-[10vh]">
       {/* position: absolute;
     content: "";
     background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #5191fa), color-stop(75%, rgba(81, 145, 250, 0))); */}

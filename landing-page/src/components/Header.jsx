@@ -33,17 +33,20 @@ const Header = () => {
     //     </nav>
     // </header>
 
-    <Disclosure as="nav" className="bg-white-100">
+    <Disclosure
+      as="nav"
+      className="fixed bg-white w-[100%] xl:flex-row z-50"
+    >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="max-w-7xl px-2 ">
             <div className="relative flex h-16 m-3 items-center justify-between">
               <div className="bg-transparent w-[30%] text center">
                 <img className="w-64" src={image} alt="Banner" />
               </div>
-              <div className="relative left-[60%] flex items-center sm:hidden">
+              <div className="relative left-[60%] flex items-center sm:hidden ">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className=" inline-flex bg-secondary justify-center rounded-md p-2 text-white hover:bg-white-[#4A678C] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex bg-secondary justify-center rounded-md p-2 text-white hover:bg-white-[#4A678C] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -63,7 +66,7 @@ const Header = () => {
                           item.current
                             ? "text-primary hover:bg-white hover:text-secondary hover:box-border "
                             : "text-primary",
-                          "px-3 py-2 rounded-md text-sm font-medium"
+                          "transition duration-700 ease-in-out hover:duration-150 px-3 py-2 rounded-md text-sm font-medium"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -87,7 +90,7 @@ const Header = () => {
                     item.current
                       ? "text-white hover:bg-secondary"
                       : "text-gray-300 hover:bg-gray-700 hover:text-secondary",
-                    "block px-3 py-2 rounded-md text-base font-medium"
+                    "transition duration-700 ease-in-out hover:duration-150 block px-3 py-2 rounded-md text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >

@@ -38,7 +38,7 @@ const Header = () => {
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 m-3 items-center justify-between">
-              <div className="bg-transparent  w-[30%] text center">
+              <div className="bg-transparent w-[30%] text center">
                 <img className="w-64" src={image} alt="Banner" />
               </div>
               <div className="relative left-[60%] flex items-center sm:hidden">

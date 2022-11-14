@@ -1,36 +1,35 @@
 const Cover = () => {
   return (
-    <section className="h-[10vh]">
-      {/* position: absolute;
-    content: "";
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #5191fa), color-stop(75%, rgba(81, 145, 250, 0))); */}
-
-
-      <div className="h-14 bg-gradient-to-r from-cyan-500 to-blue-500">
-      <img src="https://images.pexels.com/photos/3059092/pexels-photo-3059092.jpeg" />
-            {/* <img src="https://images.pexels.com/photos/10549835/pexels-photo-10549835.jpeg" /> */}
+    <main>
+      <div className="h-[10vh] w-[100%] py-20 z-50 justify-center items-center">
+        <img
+          className="h-screen w-full"
+          src="https://images.pexels.com/photos/3059092/pexels-photo-3059092.jpeg"
+        />
+        {/* <img src="https://images.pexels.com/photos/10549835/pexels-photo-10549835.jpeg" /> */}
       </div>
-      <article className="absolute text-white p-9 max-w-[620px]">
-        <div className="text-7xl font-bold">
+      <div className="bg-gradient-to-r from-purple-500 to-pink-500"></div>
+      <article className="text-center sm:text-left description w-full sm:pl-14 text-white md:w-2/3 max-w-[620px]">
+        <div className="text-3xl sm:text-7xl font-bold animate-slide-left">
           {" "}
           Where Your <br />
           Journey Start !!!{" "}
         </div>
-        <p className="leading-6 py-8 text-xl">
+        <p className="text-lg p-2 leading-6 py-8 sm:text-xl animate-slide-left-two">
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using.
         </p>
-        <div className="flex space-x-4"> 
-          <button className="bg-secondary text-xl py-2 px-4 rounded hover:bg-sky-700">
+        <div className="inline-flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 animate-slide-buttons">
+          <button className="bg-secondary text-xl py-2 px-4 rounded hover:bg-sky-700 transition duration-700 ease-in hover:duration-150">
             Book a Tour
           </button>
-          <button className="bg-primary text-xl py-2 px-4 rounded hover:bg-sky-700">
+          <button className="bg-primary text-xl py-2 px-4 rounded hover:bg-sky-700 transition duration-700 ease-in hover:duration-150">
             Get a Quote
           </button>
         </div>
       </article>
-    </section>
+    </main>
   );
 };
 export default Cover;

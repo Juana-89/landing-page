@@ -1,16 +1,17 @@
-import Header from './components/Header';
-import Cover from './components/Cover';
+import { useEffect } from "react";
+import Header from "./components/Header";
+import Cover from "./components/Cover";
+import Country from "./components/Country";
 
 function App() {
-
+  useEffect(() => {
+    document.title='Landing Page - Tourism Peru'
+  },[])
   return (
     <>
-    <Header>
-    <div className="bg-primary">
-    <h1 className="text-secondary">Prueba</h1>
-    </div>
-    </Header>
+    <Header/>
     <Cover/>
+    <Country/>
     </>
   )
 }

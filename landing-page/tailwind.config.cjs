@@ -19,16 +19,22 @@ module.exports = {
       },
       animation: {
         "slide-left":
-          "slide 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+          "slideLeft 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
         "slide-left-two":
-          "slide 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+          "slideLeft 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
         "slide-buttons":
-          "slide 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+          "slideLeft 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+        "slide-center":
+          "slideCenter 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
       },
       keyframes: {
-        slide: {
-          "0%": { transform: "translateX(-1000px)" },
-          "100%": { transform: "translateX(0)" },
+        slideLeft: {
+          "0%": { opacity: '0', transform: "translateX(-1000px)" },
+          "100%": { opacity: '1',transform: "translateX(0)" },
+        },
+        slideCenter: {
+          "0%": { opacity: '0', transform: "translateZ(-1400px)" },
+          "100%": { opacity: '1', transform: "translateZ(0)" },
         },
       },
     },

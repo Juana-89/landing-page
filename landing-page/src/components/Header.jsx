@@ -39,12 +39,12 @@ const Header = () => {
     >
       {({ open }) => (
         <>
-          <div className="max-w-7xl px-2 ">
-            <div className="relative flex h-16 m-3 items-center justify-between">
-              <div className="bg-transparent w-[30%] text center">
+          <div className="max-w-7xl">
+            <div className="relative ml-px sm:ml-5 flex h-8 sm:h-16 m-3 items-center justify-between">
+              <div className="bg-transparent w-[40%] text center">
                 <img className="w-64" src={image} alt="Banner" />
               </div>
-              <div className="relative left-[60%] flex items-center sm:hidden ">
+              <div className="relative left-[50%] flex items-center sm:hidden ">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex bg-secondary justify-center rounded-md p-2 text-white hover:bg-white-[#4A678C] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>

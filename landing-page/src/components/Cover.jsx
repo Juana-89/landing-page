@@ -1,12 +1,7 @@
 const Cover = () => {
   return (
-    <main className="bg-hero-pattern bg-cover opacity-90">
-      <div className="bg-auto bg-center py-20 z-50 justify-center items-center">
-        {/* <img
-          className="h-screen w-full"
-          src="https://images.pexels.com/photos/3059092/pexels-photo-3059092.jpeg"
-        /> */}
-        {/* <img src="https://images.pexels.com/photos/10549835/pexels-photo-10549835.jpeg" /> */}
+    <main className="bg-hero-pattern bg-cover bg-center opacity-90">
+      <div className="bg-auto bg-center content-center pt-20 sm:pt-60 z-50 justify-center items-center">
       </div>
       <article className="text-center sm:text-left description w-full sm:pl-14 text-white md:w-2/3 max-w-[620px]">
         <div className="text-3xl sm:text-7xl font-bold animate-slide-left">

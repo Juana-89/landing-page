@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Header from "./components/Header";
 import Cover from "./components/Cover";
-import Country from "./components/Country";
+import Blog from "./components/Blog";
 
 function App() {
   useEffect(() => {
@@ -11,7 +11,7 @@ function App() {
     <>
     <Header/>
     <Cover/>
-    <Country/>
+    <Blog/>
     </>
   )
 }

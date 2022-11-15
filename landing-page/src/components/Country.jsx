@@ -1,15 +1,7 @@
 const Country = () => {
-  return (
-    <section className="sm:p-16 py-10 text-center sm:max-w-4xl m-auto animate-slide-center">
-      <div className="text-3xl mx-4 sm:text-6xl mb-8">Popular Package</div>
-      <div className="texto-sm sm:text-xl">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.{" "}
-      </div>
-    </section>
-  );
-};
+return (
+    <h1>country</h1>
+)
+}
 
-export default Country;
+export default Country

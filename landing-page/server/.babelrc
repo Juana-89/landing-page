@@ -1,0 +1,9 @@
+// Babel configuration to using in ECMA 6 
+{
+    "presets":[
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+}

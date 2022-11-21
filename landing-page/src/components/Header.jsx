@@ -33,10 +33,7 @@ const Header = () => {
     //     </nav>
     // </header>
 
-    <Disclosure
-      as="nav"
-      className="fixed bg-white w-[100%] xl:flex-row z-50"
-    >
+    <Disclosure as="nav" className="fixed bg-white w-[100%] xl:flex-row z-50">
       {({ open }) => (
         <>
           <div className="max-w-7xl">

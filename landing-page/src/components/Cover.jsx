@@ -1,3 +1,4 @@
+import Buttons from './Buttons'
 const Cover = () => {
   return (
     <main className="bg-hero-pattern bg-cover bg-center opacity-90">
@@ -15,12 +16,8 @@ const Cover = () => {
           using.
         </p>
         <div className="inline-flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 animate-slide-buttons">
-          <button className="bg-green text-xl py-2 px-4 rounded hover:bg-sky-700 transition duration-700 ease-in hover:duration-150">
-            Book a Tour
-          </button>
-          <button className="bg-primary text-xl py-2 px-4 rounded hover:bg-sky-700 transition duration-700 ease-in hover:duration-150">
-            Get a Quote
-          </button>
+          <Buttons text= "Book a Tour"/>
+          <Buttons text= "Get a Quote"/>
         </div>
       </article>
     </main>

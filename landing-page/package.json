@@ -1,5 +1,5 @@
 {
-  "name": "vite-project",
+  "name": "landing-page-tourism",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server:dev": "nodemon  server/database/index.js --exec babel-node -- ignore src"
+    "server:dev": "nodemon  server/database/_index.js --exec babel-node -- ignore src"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",
+    "axios": "^1.1.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",

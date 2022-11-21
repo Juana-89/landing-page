@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Cover from "./components/Cover";
 import Blog from "./components/Blog";
 import Places from "./components/Places";
+import ChosenPlace from "./components/ChosenPlace";
 
 function App() {
   useEffect(() => {
@@ -14,6 +15,7 @@ function App() {
     <Cover/>
     <Blog/>
     <Places/>
+    <ChosenPlace/>
     </>
   )
 }

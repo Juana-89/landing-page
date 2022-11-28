@@ -5,21 +5,26 @@ import { allPlaces } from "../../server/database/connection.js";
 
 const Places = () => {
   const[places, setPlaces] = useState([]);
+  console.log([... new Set(places.filter(place =>place.name==='Lima'))], "22222")
+
+  //const placesNoRepeat= [... new Set(places.map(item => item.name))]
+  //console.log(placesNoRepeat + "aaaaa")
 
   useEffect(() => {
     allPlaces(setPlaces);
   }, []);
 
   const filterPlace = (name) => {
-    const filteredData = places.filter(place => place.name ===  name);
-    console.log(name.name)
+    //const filteredData = places.filter((place, index) => place.name ===  name);
+    const filteredData = [...new Set(places.filter(place =>place.name ===  name))]
+    //console.log(name.name)
     return setPlaces(filteredData)
   
   }
 
 
   return (
-    <section className="m-4 flex flex-wrap">
+    <section className="m-4 flex flex-wrap justify-center">
       {/* {places &&
         places.map((place, index) => (
           <button

@@ -8,7 +8,7 @@ const Places = () => {
   const placesNoRepeat= [... new Set(places.map(item => item.name))]
 
   useEffect(() => {
-    allPlaces(setPlaces);
+    allPlaces(setPlaces)
   }, []);
 
   const filterPlace = (name) => {

@@ -12,9 +12,6 @@ const DetailPlace = ({item}) => {
            </figure>
            <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">{place.name}</div>
-            {/* <img className="w-full" src={place.img2} alt={place.name}/>
-            <img className="w-full" src={place.img3} alt={place.name}/> */}
-           
             <p className="font-bold text-xl mb-2">{place.title}</p>
             <p className="text-gray-700 text-base">{place.description}</p>
             </div>

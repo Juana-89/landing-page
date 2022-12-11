@@ -1,15 +1,19 @@
+import ReadMore from './ReadMore'
 const DetailPlace = ({item}) => {
   return (
-    <section className="flex flex-wrap rounded shadow-lg">
+    <section className="sm:flex photos-container mx-auto flex-wrap">
       {item ?
         item.map((place, index) => {
           return (
             <div
-              className="items-center	m-4 flex-1 bg-transparent shadow-lg hover:shadow-blue-500/50 transition duration-700 
-               text-blue-500 font-semibold py-2 px-4 border rounded" key={index}>
+              className="my-8 px-1 sm:w-1/3 items-center bg-transparent shadow-lg hover:shadow-blue-500/50 transition duration-700 
+               text-blue-500 font-semibold border rounded"
+              key={index}
+            >
+              {/* py-2 px-4  */}
               <figure className="h-96 w-97">
                 <img
-                  className="w-full h-full duration-500 hover:rotate-5 hover:scale-95 transition-transform cover"
+                  className="object-cover w-full h-full duration-500 hover:rotate-5 hover:scale-95 transition-transform cover"
                   src={place.img}
                   alt={place.name}
                 />
@@ -20,7 +24,9 @@ const DetailPlace = ({item}) => {
                   {place.name}
                 </div>
                 <p className="text-sm mb-2">{place.title}</p>
-                <p className="text-gray-700 text-base">{place.description}</p>
+                <span className="text-gray-700 text-base">
+                  <ReadMore>{place.description}</ReadMore>
+                </span>
               </div>
             </div>
           );
